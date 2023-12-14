@@ -17,6 +17,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+header {
+    z-index: 10;
+}
+
 .btn-primary {
     --bs-btn-border-color: #378b69;
     --bs-btn-hover-border-color: #6eb799;
@@ -46,18 +50,6 @@ body {
     color: #0d8040;
 }
 
-.jumbotron {
-    background-color: #0d8040;
-    color: white;
-    margin-bottom: 0;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-
-.jumbotron h1 {
-    font-size: 4rem;
-}
-
 .btn {
     background-color: #378b69;
     color: white;
@@ -76,7 +68,7 @@ body {
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    z-index: 1;
+    z-index: 0;
 }
 
 .custom-shape-divider-top-1702578596 svg {
