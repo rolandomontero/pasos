@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="es" data-bs-theme="auto">
-
+<html lang="es">
+<!--  data-bs-theme="auto"
+<script src="../assets/js/color-modes.js"></script>
+-->
 <meta name="viewport" content="initial-scale=1, width=device-width,
                 viewport-fit=cover">
 
 
 
-
-<script src="../assets/js/color-modes.js"></script>
 <meta charset="utf-8">
 <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -18,82 +18,168 @@
 
 <body>
 
-    <header class="d-flex flex-wrap justify-content-center  py-3 
-    bg-light sticky-top navbar-expand-lg custom-shape-divider-top-1702588956">
-        <a href="/" class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <img src="img/logo.png">
-        </a>
-        <ul data-aos="fade-up" class="nav nav-pills">
-            <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">
-                    <i class="bi bi-house-fill"></i> Inicio
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Presupuestos</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Preguntas</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                        Acerca de
-                        nosotros
-                    </a>
-            </li>
-        </ul>
 
-    </header>
+    <!-- Navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-light">
+        <div class="container">
+
+            <a href="/" class="navbar-brand">
+                <img src="img/logo.png">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">
+                            <i class="bi bi-house-fill"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Presupuestos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                    Acerca de
+                    nosotros
+                </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <main>
 
         <div class="jumbotron">
-            <div class="custom-shape-divider-top-1702596940">
+            <div class="b-divider blanco"></div>
+            <div class="custom-shape-divider-top-jumbotron">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
             </svg>
             </div>
 
-            <div data-aos="flip-up" class="container">
-                <h1 class="display-6 display-5 fw-bold lh-1 mb-3">Llamar a la acción</h1>
-                <p class="lead"> En Housport puedes navegar libremente por todos los deportes, escoger el tuyo y encontrar al entrenador capaz de sacar lo mejor de ti. Comparte resultados, compárate con otros y prueba la efectividad de ser entrenado personalmente por
-                    profesionales de tu disciplina favorita.
-                    <br>
+            <div class="container col-xxl-8 px-4">
+                <div class="row flex-lg-row-reverse align-items-center g-5 ">
+                    <h1 class="display-6 display-5 fw-bold lh-1 mb-3">Llamar a la acción</h1>
+                    <div class="col-lg-6" data-aos="flip-left">
+                        <p class="lead"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quas eum ipsa odio eos deleniti. Aliquid perspiciatis, dolor dolorem itaque corporis praesentium facere distinctio voluptatem consequatur consectetur sit at velit.
+                            <br>
 
-                </p>
+                        </p>
 
+                        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+                    </div>
+                    <div class="col-10 col-sm-8 col-lg-6" data-aos="flip-right">
+                        <video id="my-video" class="d-block mx-lg-auto img-fluid video" autoplay muted loop>
+                            <source
+                                src="img/costa.mp4"
+                                type="video/mp4"
+                                class="d-block mx-lg-auto img-fluid"
+                                width="90%"
+                                height="90%"
+                                loading="lazy">
+                        </video>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="b-divider verde"></div>
+            <div class="custom-shape-divider-bottom-jumbotron">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
             </div>
         </div>
 
+        <!-- Hero Container-->
         <section>
-
-            <div class="custom-shape-divider-bottom-1702593390">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
+            <div class="b-divider blanco"></div>
             <div data-aos="fade-up" class="container">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Propuesta de Valor</h1>
-                <p class="lead">
+                <h1 class="display-5 mb-6 fw-bold text-body-emphasis lh-1 text-center">¿Qué hacemos?</h1>
+                <p class="lead"> <br/></p>
+                <p class="lead fs mb-6  text-center">
                     Lorem ip teat is lae doremisgol conghediment. Wer reer volutpat eleifend al commolo coletenisi et arcu ullamcorper consectetur loremisedi consectetur. Ips bulafes uke phasellusd eonsequatduani posuermorbi er orciemts num tristique senecto distilul ed
                     ononimee maximusinty oremvarem remporerim chosummity ensectty dolorsett oposuolar cholsummity praesuti car posuaret.
+                    <br/>
                 </p>
+                <p class="lead"> <br/></p>
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col">
+                        <div data-aos="flip-right" class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal"> <img src="img/icon/icon-01.svg" alt=""></h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title text-center">
+                                    Guiando el Futuro Sostenible
+                                </h1>
+                                <p class="mt-3 mb-4">
+                                    "Descubre cómo estamos guiando a empresas hacia la excelencia ambiental, transformando desafíos en oportunidades sostenibles."
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div data-aos="zoom-in" class="card mb-4 rounded-3">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal"><img src="img/icon/icon-02.svg" alt=""> </h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">Innovación <br/> -- <br/> Ambiental</h1>
+                                <p class="mt-3 mb-4">
+                                    "Explora nuestra dedicación a la innovación para un futuro más resiliente. Únete a nosotros en el impulso del cumplimiento y la educación ambiental."
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div data-aos="flip-left" class="card mb-4 rounded-3">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal"><img src="img/icon/icon-03.svg" alt=""></h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">Compromiso Sostenibilidad Total</h1>
+                                <p class="mt-3 mb-4">
+                                    "Descubre nuestro compromiso total con la sostenibilidad, desde superar estándares hasta educar para el cambio positivo. Bienvenido a un mundo donde la innovación y la responsabilidad ambiental van de la mano."
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="custom-shape-divider-bottom-1702591151">
+
+            <div class="custom-shape-divider-bottom-S1">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
                 </svg>
             </div>
         </section>
-        <!-- Container -->
+        <!-- We can do? -->
 
+        <section class="S1">
 
-        <section>
-            <div class="container col-xxl-8 px-4 py-5">
+            <picture>
+
+                <img src="img/petrohue_1.webp" alt="Flores" style="width:100%;">
+            </picture>
+            <div class="container col-xxl-8 px-4">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <h1 class="display-5 fw-bold text-body-emphasis text-center lh-1 mb-3">Responsive left-aligned hero with image</h1>
+
                     <div class="col-lg-6" data-aos="flip-left">
-                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-                        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and
-                            powerful JavaScript plugins.</p>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, fuga id quis maiores eos at velit odit, vero ab ut repellendus corrupti quidem a commodi, earum illo exercitationem iste voluptatem!</p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                             <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
                         </div>

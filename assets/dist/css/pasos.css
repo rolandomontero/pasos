@@ -15,6 +15,7 @@
 
 .bg-light {
     --bs-bg-opacity: 0;
+    --bs-light: #FFFFF;
 }
 
 body {
@@ -74,7 +75,7 @@ body {
 }
 
 .video {
-    border-radius: 2rem;
+    border-radius: 12px;
     border: 3px solid #378b69;
     /*padding: 20px 20px;*/
     box-shadow: 0 10px 25px rgb(92 99 105 / 55%);
@@ -82,18 +83,36 @@ body {
 
 .b-divider {
     width: 100%;
-    height: 3rem;
-    background-color: rgba(0, 0, 0, 0.1);
+    height: 4.5rem;
+    /*
     border: solid rgba(0, 0, 0, 0.15);
     border-width: 1px 0;
     box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+    */
+}
+
+.blanco {
+    background-color: #FFF;
+}
+
+.verde {
+    background-color: #0d8041;
+}
+
+.card {
+    height: 500px;
+}
+
+.card:hover {
+    box-shadow: 0 10px 25px rgb(92 99 105 / 55%);
 }
 
 .jumbotron {
-    background-color: #0d8040;
+    background-color: #0d8041;
     color: white;
-    margin-bottom: 0;
+    margin-bottom: 80;
     /*
+    min-height: 50vh;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     */
@@ -128,7 +147,7 @@ body {
     fill: #212529;
 }
 
-.custom-shape-divider-top-1702596940 {
+.custom-shape-divider-top-jumbotron {
     position: relative;
     top: 0;
     left: 0;
@@ -137,13 +156,69 @@ body {
     line-height: 0;
 }
 
-.custom-shape-divider-top-1702596940 svg {
+.custom-shape-divider-top-jumbotron svg {
     position: relative;
     display: block;
     width: calc(129% + 1.3px);
     height: 150px;
 }
 
-.custom-shape-divider-top-1702596940 .shape-fill {
-    fill: #FFF;
+.custom-shape-divider-top-jumbotron .shape-fill {
+    fill: #fff;
+}
+
+.custom-shape-divider-bottom-jumbotron {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-jumbotron svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-jumbotron .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-S1 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-S1 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-S1 .shape-fill {
+    fill: #066593;
+}
+
+section {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 50vh;
+    /*
+      
+      background-size: 2.875em 2.875em; 
+      */
+}
+
+.S1 {
+    background-image: url('img/petrohue_1.webp');
 }
