@@ -1,18 +1,3 @@
-:root {
-    /* COLORES */
-    --main-color: #413f3f;
-    --main-color-dark: #413f3f;
-    --header-bg-color: #378b69;
-    --second-color: #378b69;
-    --second-color-light: #a1ceff;
-    --bs-nav-link-color: #378b69;
-    --bs-nav-link-hover-color: #1d3e31;
-    --bs-nav-link-disabled-color: #413f3f;
-    --bs-link-hover-color: #378b69;
-    --bs-btn-border-color: #378b69;
-    --bs-bg-opacity: 0;
-}
-
 .bg-light {
     --bs-bg-opacity: 0;
     --bs-light: #FFFFF;
@@ -23,13 +8,59 @@ body {
     /* linear-gradient(180deg, var(--bs-secondary-bg), var(--bs-body-bg) 100px, var(--bs-body-bg)); */
 }
 
+.btn {
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 10px 25px rgb(92 99 105 / 55%);
+}
+
+.bottom {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
 .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #378b69;
     --bs-btn-border-color: #378b69;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6eb799;
     --bs-btn-hover-border-color: #6eb799;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6eb799;
+    --bs-btn-active-border-color: #51585e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #378b69;
+    --bs-btn-disabled-border-color: #378b69;
+}
+
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0d6efd;
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0b5ed7;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
 }
 
 .text-body-secondary {
     color: #86b6a2;
+}
+
+h5 {
+    color: #0d8040;
 }
 
 .bi {
@@ -38,13 +69,14 @@ body {
 }
 
 .nav-pills {
+    padding: 0.2rem 1rem;
     --bs-nav-pills-link-active-bg: #0d8040;
     --bs-nav-pills-link-active-color: white;
     --bs-nav-pills-border-radius: 12px;
 }
 
 .nav-item {
-    color: white;
+    color: #212529;
     font-weight: normal;
 }
 
@@ -52,22 +84,8 @@ body {
     color: #0d8040;
 }
 
-.btn {
-    background-color: #378b69;
-    color: white;
+.nav-link:hover {
     font-weight: bold;
-    box-shadow: 0 10px 25px rgb(92 99 105 / 55%);
-}
-
-.btn:hover {
-    background-color: #6eb799;
-}
-
-.bottom {
-    /* position: absolute; */
-    bottom: 0;
-    width: 100%;
-    overflow: hidden;
 }
 
 .bg-dark {
@@ -207,18 +225,36 @@ body {
     fill: #066593;
 }
 
-section {
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 50vh;
-    /*
-      
-      background-size: 2.875em 2.875em; 
-      */
+.image-section {
+    border-radius: 50%;
+    border: 3px solid #0d6efd;
+    /*padding: 20px 20px;*/
+    box-shadow: 0 10px 25px rgb(92 99 105 / 55%);
 }
 
-.S1 {
-    background-image: url('img/petrohue_1.webp');
+.section-image {
+    background: linear-gradient(#066593, #06649329), url('../../../img/petrohue_1.webp');
+    background-size: cover;
+    color: white;
+}
+
+.custom-shape-divider-bottom-section {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-section svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-section .shape-fill {
+    fill: #FFFFFF;
 }
