@@ -142,9 +142,10 @@ h5 {
     color: #0d8040;
 }
 
-.nav-link:hover {
+
+/* .nav-link:hover {
     font-weight: bold;
-}
+} */
 
 .bg-dark {
     background-color: #212529;
@@ -188,20 +189,40 @@ h5 {
 }
 
 .jumbotron {
+    position: relative;
+    color: white;
+    margin-bottom: 80px;
+    /* Asegúrate de especificar la unidad (px) para la propiedad margin-bottom */
+    overflow: hidden;
+    /* Evita que el contenido salga fuera del .jumbotron */
+}
+
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: radial-gradient(#0d804100, #0d80416b, #0d8041), url('../../../img/jumbotron.jpg');
     background-size: cover;
     background-color: #0d8041;
-    color: white;
-    margin-bottom: 80;
-    /*
-    min-height: 50vh;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    */
+    animation: zoom 15s;
+    z-index: -1;
+    /* Asegura que el fondo esté detrás del contenido */
 }
 
 .jumbotron h1 {
     font-size: 4rem;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(2.0, 2.0);
+    }
 }
 
 
