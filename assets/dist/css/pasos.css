@@ -176,11 +176,15 @@ h5 {
 }
 
 .card {
-    height: 500px;
+    height: max-content;
 }
 
 .card:hover {
     box-shadow: 0 10px 25px rgb(92 99 105 / 55%);
+}
+
+.card-header {
+    background-color: #0d80412e;
 }
 
 .jumbotron {
