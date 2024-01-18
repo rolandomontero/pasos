@@ -54,7 +54,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mx-auto"></div>
-                    <ul class="nav nav-pills">
+                    <ul class="nav nav-pills border-bottom">
                         <li class="nav-item">
                             <a href="#" class="nav-link active" aria-current="page">
                                 <i class="bi bi-house-fill"></i> Inicio
@@ -203,10 +203,15 @@
         <!-- Compromiso -->
         <section class="section-image">
             <div class="container col-xxl-8 px-4 py-5">
-                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                    <div class="col-10 col-sm-8 col-lg-6" data-aos="zoom-in">
-                        <img src="img/lago.png" class="d-block mx-lg-auto img-fluid image-section" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5" data-aos="fade-left">
+
+                    <div class="col-10 col-sm-8 col-lg-6" style="max-height: 30vh;">
+
+                        <img src="img/acultura.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy">
+
                     </div>
+
+
                     <div class="col-lg-6" data-aos="fade-right">
                         <h1 class="display-5 fw-bold  lh-1 mb-3">Compromiso</h1>
                         <p class="lead">La <i>consultora Ambiental</i> <b>PASOS</b> mantiene con sus clientes el compromiso de prestar un servicio de calidad, cordial, responsable y enfocado en concientizar a través de su asesoría y cumplimiento de regulaciones, siendo
@@ -281,15 +286,32 @@
             <div class="row">
                 <div class="col-6 col-md-3 mb-3">
                     <h5>Nuestra empresa</h5>
+                    <!-- 
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">
+                            <i class="bi bi-house-fill"></i> Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#wcd" class="nav-link">¿Qué hacemos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#compromiso" class="nav-link">Nuestro Compromiso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contactame" class="nav-link">Cóntactanos</a>
+                    </li> -->
+
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2">
                             <a href="#" class="nav-link p-0 text-body-secondary">Página de inicio</a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">¿Qué hacemos?</a>
+                            <a href="#wcd" class="nav-link p-0 text-body-secondary">¿Qué hacemos?</a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-body-secondary">Cóntactanos</a>
+                            <a href="#compromiso" class="nav-link p-0 text-body-secondary">Compromiso</a>
                         </li>
                         <li class="nav-item mb-2">
                             <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
@@ -299,14 +321,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-6 mb-6">
+                <div class="col-6 col-md-3 mb-3">
                     <h5>Nuestra Empresa</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2">
                             <a href="#" class="nav-link p-0 text-body-secondary"> <i class="bi bi-geo-alt-fill"></i> Puerto Varas, Región de Los Lagos. </a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a href="tel:+5699126355" class="nav-link p-0 text-body-secondary"> <i class="bi bi-telephone-fill"></i> +56 9 XXXX XXXX</a>
+                            <a href="tel:+56923918394" class="nav-link p-0 text-body-secondary"> <i class="bi bi-telephone-fill"></i> +56 9 2391 8394</a>
                         </li>
                         <li class="nav-item mb-2">
                             <a href="#" class="nav-link p-0 text-body-secondary"> <i class="bi bi-envelope-at-fill"></i> info@pasosmedioamiental.cl</a>
@@ -316,16 +338,35 @@
                 </div>
 
                 <div class="col-md-5 offset-md-1 mb-3">
+                    <form method="GET" enctype="multipart/form-data" action="https://wa.me/56923918394" target="_blank">
+                        <h5>Envíanos un mensaje</h5>
+                        <p class="text-body-secondary"> <small> 
+                            Necesitas comunicarte urgente.
+                        </small> </p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="wsp" class="visually-hidden">
+                                   Mensaje para WhatsApps
+                                </label>
+                            <input id="wps" type="text" class="form-control" placeholder="Mensaje por WhatsApps">
+                            <button class="btn btn-primary rounded-circle" type="submit">
+                                <i class="bi bi-whatsapp"></i>
+                            </button>
+                        </div>
+                    </form>
+
+
+
+
+
                 </div>
             </div>
 
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p class="text-body-secondary">&copy; 2024 <a href="https://mclautaro.cl"> MC Lautaro's</a>, Inc. All rights reserved.</p>
+                <p class="text-body-secondary">&copy; 2024 Company, Inc. All rights reserved.</p>
 
             </div>
         </div>
     </footer>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({

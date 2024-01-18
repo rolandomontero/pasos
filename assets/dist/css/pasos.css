@@ -127,7 +127,7 @@ h5 {
 }
 
 .nav-pills {
-    /* padding: 1.5rem 3rem; */
+    padding-bottom: 0.3rem;
     --bs-nav-pills-link-active-bg: #0d8040;
     --bs-nav-pills-link-active-color: white;
     --bs-nav-pills-border-radius: 8px;
@@ -207,7 +207,7 @@ h5 {
     background: radial-gradient(#0d804100, #0d80416b, #0d8041), url('../../../img/jumbotron.jpg');
     background-size: cover;
     background-color: #0d8041;
-    animation: zoom 15s;
+    animation: zoom 40s infinite;
     z-index: -1;
     /* Asegura que el fondo esté detrás del contenido */
 }
