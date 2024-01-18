@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+.jumbotron-text-h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(1.3rem + .6vw);
+    font-style: italic;
+}
+
+@media (min-width:1200px) {
+    .jumbotron-text-h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.75rem
+    }
+}
+
 .bg-light {
     --bs-bg-opacity: 0;
     --bs-light: #FFFFF;
@@ -112,10 +127,10 @@ h5 {
 }
 
 .nav-pills {
-    padding: 0.2rem 1rem;
+    /* padding: 1.5rem 3rem; */
     --bs-nav-pills-link-active-bg: #0d8040;
     --bs-nav-pills-link-active-color: white;
-    --bs-nav-pills-border-radius: 12px;
+    --bs-nav-pills-border-radius: 8px;
 }
 
 .nav-item {
@@ -169,6 +184,8 @@ h5 {
 }
 
 .jumbotron {
+    background: radial-gradient(#0d804100, #0d80416b, #0d8041), url('../../../img/jumbotron.jpg');
+    background-size: cover;
     background-color: #0d8041;
     color: white;
     margin-bottom: 80;
