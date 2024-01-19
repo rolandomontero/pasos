@@ -89,7 +89,7 @@ body {
     border-radius: 50%;
     position: fixed;
     bottom: 12px;
-    right: 12px;
+    right: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +204,7 @@ h5 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(#0d804100, #0d80416b, #0d8041), url('../../../img/jumbotron.jpg');
+    background: radial-gradient(#0d804100, #0d8041aa, #0d8041), url('../../../img/jumbotron.jpg');
     background-size: cover;
     background-color: #0d8041;
     animation: zoom 40s infinite;
@@ -221,7 +221,7 @@ h5 {
         transform: scale(1, 1);
     }
     to {
-        transform: scale(2.0, 2.0);
+        transform: scale(1.5, 1.5);
     }
 }
 
